@@ -38,7 +38,7 @@
               <div class="mt-auto d-flex">
                 {{ with .ReadingTime }}
                 <div class="d-flex align-items-center">
-                  <span class="me-2">
+                  <span class="">
                     {{ partial "svg-icon" "icons/bootstrap/clock.svg" }}
                   </span>
                   {{ . }} minute{{ if gt . 1 }}s{{ end }}
@@ -46,7 +46,7 @@
                 {{ end }}
                 {{ with .PublishDate }}
                 <div class="ms-auto d-flex align-items-center">
-                  <span class="me-2">
+                  <span class="">
                     {{ partial "svg-icon" "icons/bootstrap/calendar2-date.svg" }}
                   </span>
                   <time datetime="{{ .Format " 2006-01-02" }}">
