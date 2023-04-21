@@ -1,7 +1,7 @@
 ---
 author: Sean Emerson
 title: "Publishing an Astro site to Github Pages"
-description: "Github pages offers free sites for github projects and organisations/users"
+description: "Github pages offers free sites for github projects and organisations/users. This post shows you how to easily publish an Astro site to Github pages quickly."
 date: 2022-11-02
 categories: [Astro]
 tags: [npm, hosting, github-pages, astro]

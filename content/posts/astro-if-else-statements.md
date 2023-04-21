@@ -1,7 +1,7 @@
 ---
 author: Sean Emerson
 title: "Astro if...else statements"
-description: "How to use if...else statements within a .astro file"
+description: "Using iff..else statements within a .astro file isnt so straight forward. This post will show you how you can get around thsi limitation and easily use if...else statements with a jsx style hack"
 categories: ["Astro"]
 date: 2022-02-18
 draft: false

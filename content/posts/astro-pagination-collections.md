@@ -1,7 +1,7 @@
 ---
 author: Sean Emerson
 title: "Astro 2.0 Pagination for Collections"
-description: "How to use Astro 2.0 Pagination with collections of markdown files"
+description: "How to use Astro 2.0 Pagination with collections of markdown files. This currently isnt clear with the Astro docs, but here is a simple explanation to get you started!"
 date: 2022-02-16
 draft: false
 categories: [Astro]
