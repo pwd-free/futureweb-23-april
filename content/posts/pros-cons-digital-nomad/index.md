@@ -18,7 +18,7 @@ Remote work has become increasingly popular in recent years, particularly in the
 
 That said, there are also some potential downsides to consider, such as the lack of face-to-face interaction with colleagues, potential communication difficulties, slow internet connections in developing countries, and the need for a self-disciplined approach to work. Some jobs require you to come into the office one day per week, or you may enjoy working a a co-working space for a few days a week to give you a chance to interact with others while working.
 
-![Working remotely in northern South Africa](remote1.jpeg)
+![Image of Working remotely in northern South Africa](remote1.jpeg "Working remotely in northern South Africa")
 
 ## Freelancing Advantages and Disadvantages
 
@@ -30,7 +30,7 @@ Freelancers need to find their own clients and manage their own workload, which 
 
 For me, the biggest advantage to being a digital nomad is the ability to work and travel at the same time! Digital nomads can work from anywhere in the world, whether it's a coffee shop on the beach in Bali or a futuristic co-working space in Europe. This lifestyle can provide a sense of adventure and the opportunity to experience new cultures and ways of life. While working alone can be daunting, digital nomads often have a strong sense of community, connecting with like-minded individuals through social media groups and online forums.
 
-![Working remotely in Kruger National Park](remote2.jpeg)
+![Image of Working remotely in Kruger National Park](remote2.jpeg "Working remotely in Kruger National Park")
 
 ## Work from Anywhere Drawbacks
 
