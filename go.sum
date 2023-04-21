@@ -1,0 +1,5 @@
+github.com/future-wd/hugo-imaging-common v0.0.8/go.mod h1:T+CwESc3sveTg/R4X/2AeQszY52MuqfyNuVV2UmSn+E=
+github.com/future-wd/hugo-responsive-images v1.2.19 h1:mHgrVTWa+YK0PB3rWA6k4smLWPJyM4S6mJEmSlNOsC0=
+github.com/future-wd/hugo-responsive-images v1.2.19/go.mod h1:YE72mEpC8vO+vJTDmDhgNIQV3N7QdV3gleRwe8zrgmU=
+github.com/future-wd/hugo-responsive-images v1.3.0 h1:L6ySq9kJjhjFywtFzL+LXxQZ4jozHhZLb3SiV7eH8KQ=
+github.com/future-wd/hugo-responsive-images v1.3.0/go.mod h1:YE72mEpC8vO+vJTDmDhgNIQV3N7QdV3gleRwe8zrgmU=

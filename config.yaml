@@ -1,7 +1,7 @@
-baseURL: http://localhost/
-title: Hugo SCSS Building
+baseURL: http://futurewebdesign.au
+title: Future Web Design
 # alternate copyright company text
-copyright: Sean Emerson
+# copyright: Sean Emerson
 # controls number of pages displayed on list pages
 paginate: 5
 # controls the summary length on list pages
@@ -39,6 +39,9 @@ related:
   # lowercase search query
   toLower: true
 
+module:
+  imports:
+  - path: github.com/future-wd/hugo-responsive-images
 
 params:
   dateFormat: "02/01/2006"
@@ -52,3 +55,27 @@ params:
   relatedPosts: 5
   recentPosts: 5
   postTags: 10
+
+  image:
+    widths: [600, 900, 1300] # widths to generate if widths not specified
+    # shortcode_widths: [600, 900, 1300] # custom widths for shortcode use in markdown files. If unset defaults to widths
+    # render_hook_widths: [600, 900, 1300] # custom widths for render hook use in markdown files. If unset defaults to shortcode widths
+    densities: [1,2] # densities which are output when an image width is specified
+    formats: [webp, original] # set output formats. options are `original`, `bmp`, `gif`, `jpeg`, `jpg`, `png`, `tif`, `tiff`, and `webp`. In order of least supported to most supported. For "image_only" the first format will be used.
+    class: img-fluid # default image class if no class is specified
+    figure_class: "figure img-fluid" # default figure class
+    figure_image_class: "figure-img img-fluid" # default figure image class (appended to image class) ## USE .class to override outside of config
+    figcaption_class: figure-caption # default figcaption class
+    figcaption_title_h: 4 # heading level for figure title
+    render_hook_wrapper_class: img-wrapper # image wrapper class for render hook
+    shortcode_wrapper_class: img-wrapper # image wrapper class for shortcode
+    loading: lazy # or auto/lazysizes # lazy/auto are for stock browser behavior, lazysizes will use lazysizes.js
+    render_hook: true # set to false to disable included markdown image render hook
+                      # override by setting imageRenderHook: true/false in front matter
+    # placeholder: lqip # or dominant/file_name  (see colours set up in assets/images/placeholder-colors) use filename without .gif
+    lqip_blur_amount: 5 # apply gaussian blur amount of 5 to lqip
+                      # may need to be increased at a page level for larger images
+    lqip_div_amount: 5 # lqip is 5x smaller than the smallest image in srcset
+    gif_div_amount: 10 # single color gif placeholder is 10x smaller than smallest image in srcset
+    # provider: netlify # currently only supports netlify image processing.
+    suppress_width_warning: false # turn of warning that image cannot be resized to the widths spec
