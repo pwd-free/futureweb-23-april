@@ -1,0 +1,99 @@
+// scss-docs-start gray-color-variables
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+// scss-docs-end gray-color-variables
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #198754 !default;
+$teal:    #20c997 !default;
+$cyan:    #0dcaf0 !default;
+// scss-docs-end color-variables
+
+// scss-docs-start theme-color-variables
+$primary:       #8f07d3;
+$secondary:     $gray-700 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+// scss-docs-end theme-color-variables
+
+
+
+
+// $body-bg:                   $light;
+$body-color:                $gray-800;
+
+$border-width:                2px;
+
+// scss-docs-start border-radius-variables
+$border-radius:               .25rem !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+// scss-docs-start card-variables
+// $card-border-width:                 $border-width !default;
+$card-border-radius:                $border-radius-sm;
+// scss-docs-end card-variables
+
+
+$link-color:                              $secondary ;
+// Pagination
+
+// // scss-docs-start pagination-variables
+// $pagination-padding-y:              .375rem !default;
+// $pagination-padding-x:              .75rem !default;
+// $pagination-padding-y-sm:           .25rem !default;
+// $pagination-padding-x-sm:           .5rem !default;
+// $pagination-padding-y-lg:           .75rem !default;
+// $pagination-padding-x-lg:           1.5rem !default;
+
+///$pagination-color:                  $link-color !default;
+// $pagination-bg:                     $white !default;
+// $pagination-border-width:           $border-width !default;
+// $pagination-border-radius:          $border-radius !default;
+// $pagination-margin-start:           -$pagination-border-width !default;
+// $pagination-border-color:           $gray-300 !default;
+
+// $pagination-focus-color:            $link-hover-color !default;
+// $pagination-focus-bg:               $gray-200 !default;
+// $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
+// $pagination-focus-outline:          0 !default;
+
+// $pagination-hover-color:            $link-hover-color !default;
+$pagination-hover-bg:               $gray-300;
+$pagination-hover-border-color:     $gray-500;
+
+// $pagination-active-color:           $component-active-color !default;
+// $pagination-active-bg:              $component-active-bg !default;
+// $pagination-active-border-color:    $pagination-active-bg !default;
+
+// $pagination-disabled-color:         $gray-600 !default;
+// $pagination-disabled-bg:            $white !default;
+// $pagination-disabled-border-color:  $gray-300 !default;
+
+// $pagination-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// $pagination-border-radius-sm:       $border-radius-sm !default;
+// $pagination-border-radius-lg:       $border-radius-lg !default;
+// scss-docs-end pagination-variables

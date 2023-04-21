@@ -1,0 +1,12 @@
+{{ $categeories := site.Taxonomies.categories  }}
+
+{{ if $categeories }}
+  <div class="widget widget--post-categories">
+    <h3 class="widget__heading">Post Categories</h3>
+    <ul>
+    {{ range $categeories.ByCount }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
+    {{ end }}
+    </ul>
+  </div>
+{{ end }}

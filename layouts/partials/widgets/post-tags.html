@@ -1,0 +1,12 @@
+{{ $tags := site.Taxonomies.tags }}
+
+{{ if $tags }}
+  <div class="widget widget--post-tags">
+    <h3 class="widget__heading">Post Tags</h3>
+
+    {{ range first (site.Params.postTags | default 10) $tags.ByCount }}
+    <a class="btn btn-primary btn-sm me-1 mb-2" role="button" href="{{ .Page.RelPermalink }}">{{ .Page.Title }} ({{ .Count }})</a>
+    {{ end }}
+ 
+  </div>
+{{ end }}

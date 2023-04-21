@@ -1,0 +1,50 @@
+// .post-summary {
+  // depreciated
+//   &__image {
+//     max-height: 10rem;
+//     object-fit: contain;
+//   }
+// }
+
+// .img-h-10 {
+//   max-height: 10rem;
+//   object-fit: contain;
+// }
+
+// .img-h-15 {
+//   max-height: 15rem;
+//   object-fit: contain;
+// }
+
+$heights: 5, 10, 15, 20;
+
+@each $height in $heights {
+  .img-h-#{$height} {
+    max-height: #{$height}rem;
+    object-fit: contain;
+  }
+}
+
+.widget {
+  padding-bottom: 1rem;
+
+  &--recent-posts {
+    //empty
+  }
+
+  &__heading {
+    margin-bottom: 0;
+  }
+  ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      padding-bottom: 0.5rem;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}

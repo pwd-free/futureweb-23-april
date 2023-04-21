@@ -1,0 +1,81 @@
+{{ define "main" }}
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{ partial "title" . }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {{ if .PublishDate }}
+          {{ $publishDate := .PublishDate.Format site.Params.dateFormat }}
+          {{ $lastmod := .Lastmod.Format site.Params.dateFormat}}
+          {{ partial "svg-icon" "icons/bootstrap/calendar2-date.svg" }}
+          <time datetime="{{ .PublishDate.Format "2006-01-02" }}">
+            {{ $publishDate}}
+          </time>
+          {{ if ne $publishDate $lastmod }}
+          <em> last updated on <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ $lastmod }}</time></em>
+          {{ end }}
+      {{ end }}
+      </div>
+      <div class="col-md-6 d-flex">
+        {{ with .ReadingTime }}
+        <span class="ms-md-auto">
+          {{ partial "svg-icon" "icons/bootstrap/clock.svg" }}
+          {{ . }} minute{{ if gt . 1 }}s{{ end }}
+        </span>
+      {{ end }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {{ with (.GetTerms "categories" ) }}
+          {{ partial "svg-icon" "icons/bootstrap/folder.svg" }}
+          {{ range $index, $category := . }}
+          {{ if gt $index 0 }} | {{ end }}
+          <a href="{{ $category.Permalink }}" class="text-decoration-none">
+            {{ $category.Title | humanize | title }}
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-md-6 d-flex">
+        {{ with (.GetTerms "tags" ) }}
+          <span class="ms-md-auto">
+            {{ partial "svg-icon" "icons/bootstrap/tags.svg" }}
+            {{ range $index, $tag := . }}
+            {{ if gt $index 0 }} | {{ end }}
+            <a href="{{ $tag.Permalink }}" class="text-decoration-none">
+              {{ $tag.Title | humanize | title }}
+            </a>
+            {{ end }}
+          </span>
+        {{ end }}
+      </div>
+    </div>
+    {{/* <div class="row pb-3">
+      <div class="col">
+        {{- $post := . -}}
+        {{- with .Params.images -}}
+          {{- if reflect.IsSlice . -}}
+            {{- with index . 0 -}}
+              {{- with $image := $post.Resources.GetMatch . }}
+                <img src="{{ $image.RelPermalink }}" class="img-fluid post-summary__image"
+                  width="{{ .Width }}" height="{{ .Height }}" 
+                  alt="{{ printf "Image for post %s" $post.Title }}" title="{{ $post.Title }}">
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      </div>
+    </div> */}}
+    <div class="row pt-3">
+      <div class="col">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

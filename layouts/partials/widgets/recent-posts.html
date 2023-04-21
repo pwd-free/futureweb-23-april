@@ -1,0 +1,19 @@
+{{ $recent := where site.RegularPages "Type" "posts" | first (site.Params.recentPosts | default 5)  }}
+
+{{ if $recent }}
+  <div class="widget widget--recent-posts">
+    <h3 class="widget__heading">Recent Posts</h3>
+    <ul>
+    {{ range $recent }}
+      <li><a href="{{ .RelPermalink }}">
+        <div>{{ .Title }}</div>
+        {{ with .PublishDate }}
+        <small class="text-muted">
+          <time datetime="{{ .Format "2006-01-02" }}">{{ .Format site.Params.dateFormat }}</time>
+        </small>
+        {{ end }}
+      </a></li>
+    {{ end }}
+    </ul>
+  </div>
+{{ end }}

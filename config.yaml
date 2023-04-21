@@ -1,0 +1,54 @@
+baseURL: http://localhost/
+title: Hugo SCSS Building
+# alternate copyright company text
+copyright: Sean Emerson
+# controls number of pages displayed on list pages
+paginate: 5
+# controls the summary length on list pages
+summaryLength: 7
+# this is required so that Hugo will render markdown to HTML
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false # false needs a stylesheet
+    noHl: false
+    style: monokai
+    tabWidth: 4
+enableGitInfo: true
+# config for related posts
+related:
+  #pages which are newer than the current page
+  includeNewer: true
+  # search terms
+  indices:
+  - name: categories
+    weight: 100
+  - name: tags
+    weight: 100
+  threshold: 80
+  # lowercase search query
+  toLower: true
+
+
+params:
+  dateFormat: "02/01/2006"
+  widgets: 
+  - search
+  - recent-posts
+  - related-posts
+  - post-categories
+  - post-tags
+  # control the number of items in widgets
+  relatedPosts: 5
+  recentPosts: 5
+  postTags: 10

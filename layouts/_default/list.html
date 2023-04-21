@@ -1,0 +1,66 @@
+{{ define "main" }}
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        {{- $paginator := "" -}}
+        {{- if .IsHome -}}
+        {{- $paginator = .Paginate (where .Site.RegularPages "Type" "posts" )}}
+        {{- else -}}
+        {{- $paginator = .Paginator -}}
+        {{ partial "title" . }}
+        {{ end }}
+        {{ .Content | markdownify }}
+        {{ range $paginator.Pages }}
+        <article class="mb-3">
+          <div class="row">
+            <div class="col-md-5 d-flex justify-content-center">
+              {{- $post := . -}}
+              {{- with .Params.images -}}
+              {{- if reflect.IsSlice . -}}
+              {{- with index . 0 -}}
+              {{- with $image := $post.Resources.GetMatch . }}
+              <img src="{{ $image.RelPermalink }}" class="img-fluid img-h-10" width="{{ .Width }}"
+                height="{{ .Height }}" alt="{{ printf " Image for post %s" $post.Title }}" title="{{ $post.Title }}">
+              {{- end -}}
+              {{- end -}}
+              {{- end -}}
+              {{- end -}}
+            </div>
+            <div class="col-md-7 order-md-first d-flex flex-column">
+              <header>
+                <h2><a class="text-decoration-none" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+              </header>
+              <div class="pb-3">
+                {{ .Summary }}
+              </div>
+              <div class="mt-auto d-flex">
+                {{ with .ReadingTime }}
+                  <span>
+                  {{ partial "svg-icon" "icons/bootstrap/clock.svg" }}
+                  {{ . }} minute{{ if gt . 1 }}s{{ end }}
+                  </span>
+                {{ end }}
+                {{ with .PublishDate }}
+                  <span class="ms-auto">
+                    {{ partial "svg-icon" "icons/bootstrap/calendar2-date.svg" }}
+                    <time datetime="{{ .Format " 2006-01-02" }}">
+                      {{ .Format site.Params.dateFormat }}
+                    </time>
+                  </span>
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </article>
+        {{ end }}
+        {{ if $paginator.Pages }}
+        <div class="mt-3 mx-3 d-flex justify-content-center">
+          {{ template "_internal/pagination.html" . }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

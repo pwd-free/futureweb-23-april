@@ -1,0 +1,12 @@
+{{ $related := site.RegularPages.Related . | first (site.Params.relatedPosts | default 5) }}
+
+{{ if $related }}
+  <div class="widget widget--related-posts">
+    <h3 class="widget__heading">Related Posts</h3>
+    <ul>
+    {{ range $related }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
+{{ end }}

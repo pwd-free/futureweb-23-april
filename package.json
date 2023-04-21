@@ -1,0 +1,19 @@
+{
+  "name": "futurewebdesign.au",
+  "scripts": {
+    "dev": "hugo server --disableFastRender --gc",
+    "dev:preview": "npm run dev -- --buildDrafts --buildFuture",
+    "build": "hugo -v --gc --minify --cleanDestinationDir",
+    "renderToDisk": "hugo server --disableFastRender --renderToDisk --cleanDestinationDir --gc",
+    "renderToDisk:preview": "npm run renderToDisk -- --buildDrafts --buildFuture ",
+    "renderToDisk:production": "npm run renderToDisk -- --minify --environment production"
+  },
+
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.1.3",
+    "autoprefixer": "^10.4.0",
+    "bootstrap": "^5.1.3",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
+  }
+}
