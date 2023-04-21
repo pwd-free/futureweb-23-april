@@ -28,7 +28,7 @@
               {{- end -}}
             </div> -->
             <!-- <div class="col-md-7 order-md-first d-flex flex-column"> -->
-              <div class="col order-md-first d-flex flex-column">
+            <div class="col order-md-first d-flex flex-column blog-summary">
               <header>
                 <h2><a class="text-decoration-none" href="{{ .Permalink }}">{{ .Title }}</a></h2>
               </header>
@@ -37,18 +37,22 @@
               </div>
               <div class="mt-auto d-flex">
                 {{ with .ReadingTime }}
-                  <span>
-                  {{ partial "svg-icon" "icons/bootstrap/clock.svg" }}
-                  {{ . }} minute{{ if gt . 1 }}s{{ end }}
+                <div class="d-flex align-items-center">
+                  <span class="me-2">
+                    {{ partial "svg-icon" "icons/bootstrap/clock.svg" }}
                   </span>
+                  {{ . }} minute{{ if gt . 1 }}s{{ end }}
+                </div>
                 {{ end }}
                 {{ with .PublishDate }}
-                  <span class="ms-auto">
+                <div class="ms-auto d-flex align-items-center">
+                  <span class="me-2">
                     {{ partial "svg-icon" "icons/bootstrap/calendar2-date.svg" }}
-                    <time datetime="{{ .Format " 2006-01-02" }}">
-                      {{ .Format site.Params.dateFormat }}
-                    </time>
                   </span>
+                  <time datetime="{{ .Format " 2006-01-02" }}">
+                    {{ .Format site.Params.dateFormat }}
+                  </time>
+                </div>
                 {{ end }}
               </div>
             </div>
