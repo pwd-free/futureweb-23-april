@@ -1,8 +1,47 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode }}" data-bs-theme="dark">
+
 <head>
- {{ partial "head" . }}
+  <script>
+    (() => {
+      'use strict'
+  
+      const getPreferredTheme = () => {
+        const storedTheme = localStorage.getItem('theme');
+
+        if (storedTheme) {
+          return storedTheme
+        }
+        return 'default'
+      }
+
+      const setTheme = function (theme) {
+        if (theme === 'default' ) {
+          return; 
+        }
+        document.documentElement.setAttribute('data-bs-theme', theme)
+        localStorage.setItem('theme', theme);
+      }
+
+      setTheme(getPreferredTheme())
+
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('js-themeSwitcher')
+          .addEventListener('click', () => {
+            const theme = localStorage.getItem('theme');
+            let newTheme = 'light';
+            if (theme === 'light') {
+               newTheme = 'dark';
+            }
+            setTheme(newTheme);
+          })
+
+      })
+    })()
+  </script>
+  {{ partial "head" . }}
 </head>
+
 <body>
   <header>
     {{ partial "header" . }}
@@ -14,7 +53,7 @@
           {{ block "main" . }}{{ end }}
         </main>
       </div>
-      <div class="col-md-3 mb-3"> 
+      <div class="col-md-3 mb-3">
         {{ partial "widgets/index" . }}
       </div>
     </div>
@@ -24,4 +63,5 @@
   </footer>
   {{ partial "script-footer" . }}
 </body>
+
 </html>

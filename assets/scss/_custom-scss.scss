@@ -6,6 +6,33 @@ h1 {
   font-size: 3rem;
 }
 
+html[data-bs-theme="dark"] {
+  .switch__icon--light {
+    display: block;
+  }
+  .switch__icon--dark {
+    display: none;
+  }
+}
+
+html[data-bs-theme="light"] {
+  .switch__icon--dark {
+    display: block;
+  }
+  .switch__icon--light {
+    display: none;
+  }
+}
+
+.switch {
+  background-color: transparent;
+  border: none;
+
+  &__icon {
+    color: $primary;
+  }
+}
+
 .post .figure {
   margin: 2rem 4rem;
 }

@@ -1,4 +1,4 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-body">
+<nav class="navbar navbar-expand-lg navbar-light bg-body">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">{{ .Site.Title }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,6 +14,12 @@
         {{ end }}
       </ul>
     </div>
+    <div class="ms-auto">
+      <button id="js-themeSwitcher" type="button" class="switch" aria-label="Switch to light theme">
+        <span class="switch__icon switch__icon--light">{{ partial "svg-icon" "icons/bootstrap/sun.svg" }}</span>
+        <span class="switch__icon switch__icon--dark">{{ partial "svg-icon" "icons/bootstrap/moon-stars.svg" }}</span>
+      </button>
+    </div>
   </div>
-</nav> -->
+</nav>
 <h1 class="text-center py-4"><a href="/">{{ .Site.Title }}</a></h1>
