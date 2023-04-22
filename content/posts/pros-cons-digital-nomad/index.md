@@ -4,7 +4,7 @@ title: "The Future is Remote"
 subtitle: "The Pros and Cons of the Digital Nomad Life for Software Developers"
 description: "Discover the pros and cons of the digital nomad lifestyle for software developers, including the benefits of remote work, freelancing advantages and disadvantages, and digital nomad benefits. Learn about the drawbacks of working from anywhere and the potential for distraction in this comprehensive guide."
 date: 2023-04-06
-categories: [digital-nomad]
+categories: ["Working Remotely"]
 tags: [remote, nomad, "digital nomad", insurance]
 images: [remote1.jpeg, remote2.jpeg]
 ---
