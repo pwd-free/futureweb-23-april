@@ -5,3 +5,15 @@ github.com/future-wd/hugo-responsive-images v1.3.0 h1:L6ySq9kJjhjFywtFzL+LXxQZ4j
 github.com/future-wd/hugo-responsive-images v1.3.0/go.mod h1:YE72mEpC8vO+vJTDmDhgNIQV3N7QdV3gleRwe8zrgmU=
 github.com/future-wd/hugo-responsive-images v1.3.1 h1:dsXItqh49aJF+9VwXNDtFK40V+IadtRQTP9KP0tCIyg=
 github.com/future-wd/hugo-responsive-images v1.3.1/go.mod h1:YE72mEpC8vO+vJTDmDhgNIQV3N7QdV3gleRwe8zrgmU=
+github.com/future-wd/hugo-responsive-images v1.3.2 h1:JTqP0Ooz66KS2SmSor+MEGpQv2B4KLh9JqApaOci/zI=
+github.com/future-wd/hugo-responsive-images v1.3.2/go.mod h1:YE72mEpC8vO+vJTDmDhgNIQV3N7QdV3gleRwe8zrgmU=
+github.com/future-wd/hugo-seo v1.0.5 h1:2RJ1G/+jW87EA6FED/1jUawPMkIAXJcZMqUzFnhZHyQ=
+github.com/future-wd/hugo-seo v1.0.5/go.mod h1:hJMC1I5pkb+CMaxvLS4/OlnSLK1BeVQfksLxIj1YawM=
+github.com/future-wd/hugo-seo v1.0.6 h1:3E0o3oWyMXGgRH3HGOR3xFPFIphFbwD/sqSHz5N9/q8=
+github.com/future-wd/hugo-seo v1.0.6/go.mod h1:hJMC1I5pkb+CMaxvLS4/OlnSLK1BeVQfksLxIj1YawM=
+github.com/future-wd/hugo-seo v1.0.7 h1:xrKDrA22U4bSXdWf3sWyS63uszlkvN1W9o6cpMEzjNk=
+github.com/future-wd/hugo-seo v1.0.7/go.mod h1:hJMC1I5pkb+CMaxvLS4/OlnSLK1BeVQfksLxIj1YawM=
+github.com/future-wd/hugo-seo v1.0.8 h1:edqpwHIW6rQNdY1Xst39mRhtRYBvwgABe5BMrgI3vl0=
+github.com/future-wd/hugo-seo v1.0.8/go.mod h1:hJMC1I5pkb+CMaxvLS4/OlnSLK1BeVQfksLxIj1YawM=
+github.com/future-wd/hugo-seo v1.0.9 h1:5gQ8PEYV0EHLKzBFTq8fn+OeAy7zE2tqwO5UXlN8xQ4=
+github.com/future-wd/hugo-seo v1.0.9/go.mod h1:hJMC1I5pkb+CMaxvLS4/OlnSLK1BeVQfksLxIj1YawM=

@@ -1,5 +1,6 @@
 baseURL: http://futurewebdesign.au
 title: Future Web Design
+description: Future Web Design provides articles on modern web technologies and latest new in the coding space.
 # alternate copyright company text
 # copyright: Sean Emerson
 # controls number of pages displayed on list pages
@@ -42,6 +43,7 @@ related:
 module:
   imports:
   - path: github.com/future-wd/hugo-responsive-images
+  - path: github.com/future-wd/hugo-seo
 
 params:
   dateFormat: "02/01/2006"
@@ -80,3 +82,24 @@ params:
     gif_div_amount: 10 # single color gif placeholder is 10x smaller than smallest image in srcset
     # provider: netlify # currently only supports netlify image processing.
     suppress_width_warning: false # turn of warning that image cannot be resized to the widths spec
+  
+  
+  seo:
+    generate: # choose which tags are generated
+      title: true
+      meta: true
+      twitter: true
+      og: true
+      jsonld:
+        article: true
+        breadcrumbs: true
+    title_tag:
+      separator: "|"
+      home_text: "" # this text is added to the title tag on home page
+    og_article_types: [post, posts, blog, news, article, articles, event, events, course, courses]
+    jsonld_article_types: [article, articles]
+    jsonld_news_article_types: [news, updates]
+    jsonld_blog_posting_types: [post, posts, blog]
+    # page or site
+    image: # set default here, page override can be set. 
+    private: false # set here or per page to modify robots meta, remove sitemap, robots and rss 

@@ -6,7 +6,7 @@ description: "Discover the pros and cons of the digital nomad lifestyle for soft
 date: 2023-04-06
 categories: [digital-nomad]
 tags: [remote, nomad, "digital nomad", insurance]
-images: [remote1.jpg, remote2.jpg]
+images: [remote1.jpeg, remote2.jpeg]
 ---
 The digital nomad lifestyle has become increasingly popular in recent years, particularly for software developers who can work remotely from anywhere in the world. While the freedom and flexibility of this lifestyle can be appealing, there are also a number of pros and cons to consider before you take the plunge.
 
