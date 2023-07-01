@@ -57,6 +57,7 @@ params:
   relatedPosts: 5
   recentPosts: 5
   postTags: 10
+  youtubeChannel: https://www.youtube.com/channel/UCtlnMUJr68ytsr11_dv_elg
 
   image:
     widths: [600, 900, 1300] # widths to generate if widths not specified

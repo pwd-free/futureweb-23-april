@@ -7,11 +7,11 @@
     {{ range $recent }}
       <li><a href="{{ .RelPermalink }}">
         <div>{{ .Title }}</div>
-        {{ with .PublishDate }}
+        {{- /* {{ with .PublishDate }}
         <small class="text-muted">
           <time datetime="{{ .Format "2006-01-02" }}">{{ .Format site.Params.dateFormat }}</time>
         </small>
-        {{ end }}
+        {{ end }} */ -}}
       </a></li>
     {{ end }}
     </ul>
