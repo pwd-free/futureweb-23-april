@@ -1,7 +1,6 @@
 ---
 author: Sean Emerson
 title: "Top Coworking spaces in New Zealand"
-subtitle: "New Zealand has more to offer than you may initially think"
 description: "Thinking about making New Zealand a base for working remotely? It certainly has a lot to offer. I compiled this list of my faviourite top co-working spaces while touring around NZ."
 date: 2023-07-01
 categories: ["Working Remotely"]
