@@ -1,5 +1,5 @@
 ---
-title: "Basic Maths Operations"
+title: "Hugo Basic Maths Operations"
 date: 2023-07-07T21:35:49+10:00
 draft: false
 categories: [hugo]
